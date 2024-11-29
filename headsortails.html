@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    
+    <title>Heads Or Tails</title>
+</head>
+<body>
+
+    <h1>Welcome To The Heads Or Tails Game</h1>
+    <p>Pick One To Begin</p>
+
+    <button onclick="const randomNumber = Math.random();
+
+    let computerMove = '';
+
+    if ( randomNumber >= 0 && randomNumber < 1/2){
+        computerMove = 'Heads';
+    }else if (randomNumber >= 1/2 && randomNumber < 2/2){
+        computerMove = 'Tails';
+    }
+
+    let result = '';
+
+    if (computerMove === 'Heads'){
+        result = 'Hurray You Win';
+    } else if (computerMove === 'Tails'){
+        result = 'Oh No You Loose';
+    }
+     
+    alert(`You picked Heads. Computer picked ${computerMove}. ${result}`);
+    
+    ">Heads</button>
+    <button onclick="const randomNumber = Math.random();
+
+    let computerMove = '';
+
+    if ( randomNumber >= 0 && randomNumber < 1/2){
+        computerMove = 'Heads';
+    }else if (randomNumber >= 1/2 && randomNumber < 2/2){
+        computerMove = 'Tails';
+    }
+
+    let result = '';
+
+    if (computerMove === 'Heads'){
+        result = 'Oh No You Loose';
+    } else if (computerMove === 'Tails'){
+        result = 'Hurray You Win';
+    }
+     
+    alert(`You picked Heads. Computer picked ${computerMove}. ${result}`);
+    
+    ">Tails</button>
+    
+</body>
+</html>
